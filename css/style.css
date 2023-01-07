@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #f0f0f0;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 200px;
+}
+@media (min-width: 768px) {
+  header .navigation span i {
+    display: none;
+  }
+
+  header .navigation ul {
+    list-style: none;
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  header .navigation {
+    position: relative;
+  }
+
+  header .navigation span i {
+    font-size: 20px;
+  }
+
+  header .navigation ul {
+    list-style: none;
+    background-color: rgb(245, 245, 245);
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    width: 110px;
+    top: calc(100% + 10px);
+    display: none;
+  }
+
+  header .navigation:hover ul {
+    display: block;
+  }
+  header .navigation ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  header .navigation ul li a:hover {
+    padding-left: 25px;
+  }
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #3a6cf4;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #3a6cf4;
+  margin: 15px;
+  font-size: 18px;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  header .navigation a {
+    font-size: 10px;
+  }
+}
+.navigation a:hover {
+  color: #25007a;
+}
+
+section {
+  padding: 100px 200px;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: url(../images/33.jpg) no-repeat; */
+  background-color: rgb(60 63 62);
+  background-size: cover;
+  background-position: center;
+}
+
+.content-main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.main h2 {
+  color: white;
+  font-size: 20px;
+}
+
+.main h2 span {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 50px;
+  color: #3a6cf4;
+  font-weight: bold;
+}
+
+.main h3 {
+  color: white;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.main-btn {
+  color: white;
+  background-color: #3a6cf4;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 40px;
+  border-radius: 15px;
+  letter-spacing: 1px;
+  transition: 0.7s ease;
+}
+
+.main-btn:hover {
+  background-color: #25007a;
+  transform: scale(1.1);
+}
+
+.social-icons a {
+  color: white;
+  font-size: 25px;
+  margin-right: 50px;
+}
+
+.projects {
+  background-color: black;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: #3a6cf4;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.project-card {
+  background-color: white;
+  border: 1px solid white;
+  min-height: 14em;
+  width: 25em;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 15px;
+  transition: 0.7s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.1);
+}
+
+.project-image img {
+  width: 100%;
+  height: 30vh;
+}
+
+.project-card:hover .project-image {
+  opacity: 0.7;
+}
+
+.project-info {
+  padding: 1em;
+}
+
+.project-paragraph {
+  font-size: 0.8em;
+  color: #000;
+}
+
+.project-title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.project-title .template {
+  text-decoration: none;
+  color: #3a6cf4;
+}
+.project-title .template:hover {
+  color: darkviolet;
+}
+
+.card {
+  background-color: #fff;
+  width: 21.25em;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+  margin: 30px;
+  transition: 0.7s ease;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card .icon {
+  color: #3a6cf4;
+  font-size: 8em;
+  text-align: center;
+}
+
+.info {
+  text-align: center;
+}
+
+.info h3 {
+  color: #3a6cf4;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.contact .icon {
+  font-size: 2em;
+}
+.footer {
+  background-color: black;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+.footer-title {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+.footer-title span {
+  color: #3a6cf4;
+}
+
+.footer .social-icons a {
+  font-size: 1.3em;
+  padding: 0 12px 0 0;
+}
+
+@media (max-width: 1200px) {
+  header {
+    padding: 12px 20px;
+  }
+
+  .navigation a {
+    padding-left: 10px;
+  }
+
+  .title {
+    font-size: 1.8em;
+  }
+
+  section {
+    padding: 80px 20px;
+  }
+
+  .main-content h2 {
+    font-size: 1em;
+  }
+
+  .main-content h3 {
+    font-size: 1.6em;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main h2 span {
+    font-size: 1.3em;
+  }
+
+  .card .icon {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    font-size: 12px;
+  }
+
+  .main-content h2 {
+    font-size: 0.8em;
+  }
+
+  .main-content h3 {
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 10px;
+  }
+  .footer .social-icons a {
+    font-size: 1em;
+    margin: 0px;
+  }
+}
+
+.aboutMy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(19, 18, 18);
+}
+.aboutMy .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 50%;
+  color: white;
+  line-height: 1.8;
+  /* transform: translateY(10%); */
+}
+.aboutMy > .content > .aboutP {
+  text-align: center;
+}
+.aboutMy hr.new1 {
+  width: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid rgb(64, 0, 255);
+}
+.aboutMy > .content > .gsg {
+  text-align: center;
+  list-style: none;
+  letter-spacing: 1px;
+}
+@media (max-width: 768px) {
+  .aboutMy {
+    background: black;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .aboutMy .about-my {
+    font-size: 5px;
+    text-align: center;
+    align-items: center;
+  }
+  .aboutMy .about-my hr.new1 {
+    margin: 10px auto;
+  }
+}
